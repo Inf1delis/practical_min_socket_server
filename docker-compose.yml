@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  echo-server:
+    build: .
+    ports:
+    - "2000:65432"
+    environment:
+    - PREFIX=lol
+    depends_on:
+    - rediska
+
+  rediska:
+    image: redis
+    ports:
+    - "7000:6379"
