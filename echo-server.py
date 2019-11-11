@@ -10,8 +10,8 @@ import os
 hostName = ''
 hostPort = 65432
 
-# prefix = os.environ['PREFIX'] + ':'
-prefix = 'lol'
+prefix = os.environ['PREFIX'] + ':'
+# prefix = 'lol'
 
 def sendMsg(conn, message):
     message += '\n'
